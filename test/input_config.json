@@ -1,0 +1,26 @@
+{
+    "TEST1": {
+        "server_url": "localhost",
+        "max_history_length": 2,
+        "items": {
+            "item1.html": [
+                "500"
+            ],
+            "item2.html": [
+                "560"
+            ]
+        }
+    },
+    "TEST2": {
+        "server_url": "localhost",
+        "max_history_length": 2,
+        "items": {
+            "item1.html": [
+                "120"
+            ],
+            "item2.html": [
+                "780"
+            ]
+        }
+    }
+}
