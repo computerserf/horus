@@ -1,0 +1,10 @@
+# uncomment this when done configuring
+{
+    "MYTASK": {
+        "server_url": "localhost",
+        "max_history_length": 10,
+        "items": {
+            "item": []
+        }
+    }
+}
