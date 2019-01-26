@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/computerwonk/horus.svg?branch=master)](https://travis-ci.org/computerwonk/horus/)
+[![Build Status](https://travis-ci.org/computerwonk/horus.svg?branch=master)](https://travis-ci.org/computerwonk/horus)
 
 # Horus
 
