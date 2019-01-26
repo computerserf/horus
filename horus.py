@@ -140,13 +140,16 @@ def save_config(data_stores, config_filename, data_serializer):
     with open(config_filename, "w") as fp:
         json.dump(json_data, fp, indent=4)
 
+def exec():
+    data_stores = load_config("config.json", deserializer)
 
-data_stores = load_config("config.json", deserializer)
+    for ds in data_stores:
+        notifier = find_notifier(ds.task_id)
+        engine = find_engine(ds.task_id)
+        agent = Agent(ds)
+        agent.execute(notifier, engine)
 
-for ds in data_stores:
-    notifier = find_notifier(ds.task_id)
-    engine = find_engine(ds.task_id)
-    agent = Agent(ds)
-    agent.execute(notifier, engine)
+    save_config(data_stores, "config.json", serializer)
 
-save_config(data_stores, "config.json", serializer)
+if __name__ == "__main__":
+    exec()
