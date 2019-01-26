@@ -29,7 +29,8 @@ from main.interfaces import Notifier, Engine
 
 class TestNotifier(Notifier):
 
-    def __init__(self):
+    def __init__(self, task_name):
+        self.task_name = task_name
         self.messages = []
         self.alerted = False
 
@@ -37,7 +38,7 @@ class TestNotifier(Notifier):
         self.messages.append("item id '" + item_id + "' price dropped to " + str(latest_data_point))
 
     def alert(self):
-        print("Test store has the following notifications:")
+        print(self.task_name + " store has the following notifications:")
         for m in self.messages:
             print("=> " + m)
         self.alerted = True
@@ -74,7 +75,7 @@ class TestEngine2(Engine):
 
 def find_notifier(task_id):
     if task_id == "TEST1" or "TEST2":
-        return TestNotifier()
+        return TestNotifier(task_id)
     else:
         raise RuntimeError("Task name not recognized")
 
