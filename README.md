@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/computerwonk/horus.svg?branch=master)](https://travis-ci.org/computerwonk/horus/)
+
 # Horus
 
 ## About
@@ -16,11 +18,15 @@ To (optionally) run all the tests run `python -m unittest discover test`. Ignore
 >
 >OK
 
+## Configuring
+
 Open `config.json` in a text editor and configure it. Open `horus.py` and hook in your customized policy objects 
 
-Run it with `python horus.py` while in the installation directory. If it tires you to manually run the system, maybe run it with `cron`.
+~Until the documentation is up, refer to `main/interfaces.py` and the test cases like `test/test_*.py`~
 
-Until the documentation is up, refer to `main/interfaces.py` and the test cases like `test/test_*.py`
+## Running
+
+Run it with `python horus.py` while in the installation directory. If it tires you to manually run the system, maybe run it with `cron`.
 
 ## Licensing
 
