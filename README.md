@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/compouterserf/horus.svg?branch=master)](https://travis-ci.org/computerserf/horus)
+[![Build Status](https://travis-ci.org/computerserf/horus.svg?branch=master)](https://travis-ci.org/computerserf/horus)
 
 # Horus
 
