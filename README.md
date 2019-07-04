@@ -22,8 +22,6 @@ To (optionally) run all the tests run `python -m unittest discover test`. Ignore
 
 Open `config.json` in a text editor and configure it. Open `horus.py` and hook in your customized policy objects 
 
-~Until the documentation is up, refer to `main/interfaces.py` and the test cases like `test/test_*.py`~
-
 ## Running
 
 Run it with `python horus.py` while in the installation directory. If it tires you to manually run the system, maybe run it with `cron`.
